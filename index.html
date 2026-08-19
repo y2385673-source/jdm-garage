@@ -168,18 +168,15 @@ section {
 
 .car-image {
     height: 190px;
-    background:
-        radial-gradient(circle at 50% 40%, #303030, #101010 65%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #101010;
+    overflow: hidden;
 }
 
-.car-code {
-    font-size: 50px;
-    font-weight: bold;
-    color: #ffffff15;
-    letter-spacing: -3px;
+.car-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .card-content {
@@ -329,9 +326,8 @@ footer {
         <div class="card" data-brand="Toyota">
 
             <div class="car-image">
-                <div class="car-code">
-                    JZX100
-                </div>
+                <img src="1999_Toyota_Chaser_jzx100.jpg"
+                     alt="Toyota Chaser JZX100">
             </div>
 
             <div class="card-content">
@@ -363,9 +359,8 @@ footer {
         <div class="card" data-brand="Toyota">
 
             <div class="car-image">
-                <div class="car-code">
-                    JZX100
-                </div>
+                <img src="JZX100_Toyota_Mark_II.jpg"
+                     alt="Toyota Mark II JZX100">
             </div>
 
             <div class="card-content">
@@ -397,9 +392,8 @@ footer {
         <div class="card" data-brand="Nissan">
 
             <div class="car-image">
-                <div class="car-code">
-                    S15
-                </div>
+                <img src="Nissan_Silvia_S15.jpg"
+                     alt="Nissan Silvia S15">
             </div>
 
             <div class="card-content">
@@ -431,9 +425,8 @@ footer {
         <div class="card" data-brand="Nissan">
 
             <div class="car-image">
-                <div class="car-code">
-                    R34
-                </div>
+                <img src="Nissan_Skyline_R34.jpg"
+                     alt="Nissan Skyline R34">
             </div>
 
             <div class="card-content">
@@ -465,9 +458,8 @@ footer {
         <div class="card" data-brand="Subaru">
 
             <div class="car-image">
-                <div class="car-code">
-                    GC8
-                </div>
+                <img src="2006-WRX-STI.jpg"
+                     alt="Subaru Impreza WRX STI">
             </div>
 
             <div class="card-content">
@@ -499,9 +491,8 @@ footer {
         <div class="card" data-brand="Mazda">
 
             <div class="car-image">
-                <div class="car-code">
-                    FD3S
-                </div>
+                <img src="Mazda-RX-7-FD.jpg"
+                     alt="Mazda RX-7 FD">
             </div>
 
             <div class="card-content">
@@ -614,4 +605,4 @@ function filterCars(brand) {
 </script>
 
 </body>
-      </html>
+    </html>
